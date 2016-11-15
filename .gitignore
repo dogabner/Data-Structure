@@ -45,3 +45,7 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+Main/Main.VC.db
+*.db
+*.suo
+Main/Main.VC.VC.opendb
