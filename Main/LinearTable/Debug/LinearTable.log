@@ -1,0 +1,6 @@
+﻿  linear.cpp
+c:\users\dogabner\onedrive\documents\github\data structure\main\lineartable\linear.cpp(123): warning C4715: 'seqList<int>::search': not all control paths return a value
+c:\users\dogabner\onedrive\documents\github\data structure\main\lineartable\linear.cpp(123): warning C4715: 'seqList<char>::search': not all control paths return a value
+c:\users\dogabner\onedrive\documents\github\data structure\main\lineartable\linear.cpp(123): warning C4715: 'seqList<double>::search': not all control paths return a value
+  LinearTable.vcxproj -> C:\Users\dogAbner\OneDrive\Documents\GitHub\Data Structure\Main\Debug\LinearTable.exe
+  LinearTable.vcxproj -> C:\Users\dogAbner\OneDrive\Documents\GitHub\Data Structure\Main\Debug\LinearTable.pdb (Partial PDB)

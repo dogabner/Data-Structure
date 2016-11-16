@@ -1,0 +1,8 @@
+﻿  1202.cpp
+1202.cpp(93): warning C4101: 'sum': unreferenced local variable
+1202.cpp(92): warning C4101: 'x': unreferenced local variable
+  Generating code
+  All 32 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Homework.vcxproj -> C:\Users\dogAbner\OneDrive\Documents\GitHub\Data Structure\Homework\Release\Homework.exe
+  Homework.vcxproj -> C:\Users\dogAbner\OneDrive\Documents\GitHub\Data Structure\Homework\Release\Homework.pdb (Full PDB)
