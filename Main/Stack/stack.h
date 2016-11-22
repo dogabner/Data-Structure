@@ -6,7 +6,7 @@ class stack
 {
 public:
 	virtual bool isEmpty() const = 0;
-
+	virtual void push(const)
 };
 
 

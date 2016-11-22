@@ -20,7 +20,7 @@ class linkList
 {
 	//template <class U>
 	//friend linkList<U> operator + (const linkList<U> & list1, const linkList<U> & list2);
-	//template <class U>
+	//	template <class U>
 	//friend istream& operater >> (istream& in, linkList<U>& list);
 	//template <class U>
 	//friend ostream& operater << (ostream& out, const linkList<U>& list);

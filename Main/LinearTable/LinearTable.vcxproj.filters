@@ -36,5 +36,11 @@
     <ClCompile Include="article.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BIT.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1036.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
