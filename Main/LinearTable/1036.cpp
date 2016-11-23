@@ -64,28 +64,28 @@ void process_2(long long *q, int n)
 	}
 	cout << w << ' ' << t;
 }
-int main()
-{
-	int n, i;
-	cin >> n;
-	long long *q = new long long[n];
-	for (i = 0; i<n; ++i) cin >> q[i];
-	if (n == 0)
-	{
-		cout << "0 0\n0 0";
-		return 0;
-	}
-	else if (n == 1)
-	{
-		cout << "0 " << q[0] << endl << "0 " << q[0];
-		return 0;
-	}
-	else if (n == 2)
-	{
-		cout << "0 " << ((q[0]>q[1]) ? q[0] : q[1]) << endl << "0 " << ((q[0]>q[1]) ? q[0] : q[1]);
-		return 0;
-	}
-	process_1(q, n);
-	process_2(q, n);
-	delete[] q;
-}
+//int main()
+//{
+//	int n, i;
+//	cin >> n;
+//	long long *q = new long long[n];
+//	for (i = 0; i<n; ++i) cin >> q[i];
+//	if (n == 0)
+//	{
+//		cout << "0 0\n0 0";
+//		return 0;
+//	}
+//	else if (n == 1)
+//	{
+//		cout << "0 " << q[0] << endl << "0 " << q[0];
+//		return 0;
+//	}
+//	else if (n == 2)
+//	{
+//		cout << "0 " << ((q[0]>q[1]) ? q[0] : q[1]) << endl << "0 " << ((q[0]>q[1]) ? q[0] : q[1]);
+//		return 0;
+//	}
+//	process_1(q, n);
+//	process_2(q, n);
+//	delete[] q;
+//}
