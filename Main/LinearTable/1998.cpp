@@ -1,24 +1,21 @@
 #include <iostream>
 using namespace std;
 
-
-inline int abs(int num)
+void qsort(int* a, int l, int r)
 {
-	return ((num > 0) ? num : -num);
-}
-
-int sum(int x, int N, int * place)
-{
-	int result = 0;
-
-	for (int i = 0; i < N; ++i) {
-		result += abs(place[i] - x);
+	if (l >= r) return;
+	int i = l, j = r, k = a[l];
+	while (i<j)
+	{
+		while ((i<j) && (a[j] >= k)) --j;
+		a[i] = a[j];
+		while ((i<j) && (a[i] <= k)) ++i;
+		a[j] = a[i];
 	}
-
-	return result;
+	a[i] = k;
+	qsort(a, l, i - 1);
+	qsort(a, i + 1, r);
 }
-
-
 
 int main()
 {
@@ -26,8 +23,14 @@ int main()
 	cin >> N;
 	int * place;
 	place = new int[N];
+	unsigned int sum = 0;
 	for (int i = 0; i < N; ++i) cin >> place[i];
-
+	qsort(place, 0, N - 1);
+	int t = N / 2;
+	for (int i = 0; i < t; ++i) {
+		sum += place[N - i - 1] - place[i];
+	}
+	cout << sum;
 
 	
 	return 0;
