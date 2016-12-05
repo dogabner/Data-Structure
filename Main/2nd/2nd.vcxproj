@@ -110,9 +110,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="balance.cpp" />
+    <ClCompile Include="balanceTest.cpp" />
     <ClCompile Include="linkStack.cpp" />
+    <ClCompile Include="printNum.cpp" />
     <ClCompile Include="seqStack.cpp" />
     <ClCompile Include="STL_Stack.cpp" />
+    <ClCompile Include="try.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

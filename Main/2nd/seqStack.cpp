@@ -47,7 +47,7 @@ void seqStack<T>::doubleSpace()
 {
 	T * tmp = elem;
 	elem = new T[2 * maxSize];
-	for (int i = 0; i < maxSize; ++i;) {
+	for (int i = 0; i < maxSize; ++i) {
 		elem[i] = tmp[i];
 		maxSize *= 2;
 		delete[] tmp;

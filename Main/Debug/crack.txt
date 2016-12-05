@@ -1,0 +1,18 @@
+as usual we offer two modes of installation:
+1) standalone:
+- install choosing the option "Use a File Installation Key" and supply the following FIK
+58691-35070-25550-28046-23042
+- select the products you would like to install
+- after the installation finishes copy the folders %crackdir%\{bin,java,toolbox} to %installdir% overwriting the originally installed files
+- the installer does not create shortcuts or program groups, so you will have to manually create them or just start matlab via
+%installdir%\bin\matlab.exe
+(on first run the activation assistant will pop up, choose "activate without internet" and point to the license file %crackdir%\lic_standalone.dat)
+2) floating license (network license server):
+- install choosing the option "Use a File Installation Key" and supply the following FIK
+48344-28329-61387-36957-44648
+- select the products you would like to install (be sure to select the license manager!)
+- when asked for license file point the installer to the file %crackdir%\lic_server.dat
+- after the installation finishes copy the folders %crackdir%\{bin,etc,java,toolbox} to %installdir% overwriting the originally installed files
+(make sure the license server isn't running yet !)
+- start the license server via lmtool or by cmd-line
+have fun !
