@@ -1,5 +1,7 @@
 #include <iostream>
 #include <iomanip>
+#include <fstream>
+#include <string>
 using namespace std;
 
 //int main() {
@@ -28,7 +30,56 @@ using namespace std;
 //
 //}
 
-int main()
+void readDataFromFileWordbyWord()
 {
-
+	ifstream fin("data.txt");
+	char s;
+	while (fin >> s) {
+		cout << "Read from file: " << s << endl;
+	}
+	
 }
+
+void readDataFromFileintoCharArray()
+{
+	ifstream fin("data.txt");
+	const int LINE_LENGTH = 100;
+	char str[LINE_LENGTH];
+	while (fin.getline(str, LINE_LENGTH))
+	{
+		cout << "Read from file: " << str << endl;
+
+	}
+}
+
+void readDataFromFileLinebyLineintoString()
+{
+	ifstream fin("data.txt");
+	string s;
+	while (getline(fin, s)) {
+		cout << "Read from file: " << s << endl;
+	}
+}
+
+void readDataWithErrChecking()
+{
+	string filename = "dataFunny.txt";
+	ifstream fin(filename.c_str());
+	if (!fin) {
+		cout << "Error opening " << filename << " for input" << endl;
+		exit(-1);
+	}
+}
+//
+//int main()
+//{
+//	readDataFromFileintoCharArray();
+//	cout << "_________________" << endl;
+//	readDataFromFileLinebyLineintoString();
+//	cout << "_________________" << endl;
+//	readDataFromFileWordbyWord();
+//	cout << "_________________" << endl;
+//	readDataWithErrChecking();
+//	cout << "_________________" << endl;
+//
+//}

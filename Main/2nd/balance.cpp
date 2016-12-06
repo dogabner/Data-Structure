@@ -166,7 +166,7 @@ void balance::SkipComment(enum CommentType type)
 //	try {
 //		if (argc == 1) {
 //			cout << "Please enter file name: "; cin >> filename;
-//			p = new balance("crack.txt");
+//			p = new balance(filename);
 //			result = p->CheckBalance();
 //			delete p;
 //			cout << "Total errors: " << result << endl;
